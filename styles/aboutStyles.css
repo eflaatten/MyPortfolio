@@ -1,0 +1,20 @@
+:root {
+  --black: #000000;
+  --blue: #0B60B0;
+  --light-blue: #40A2D8;
+  --tan: #F0EDCF;
+  --dark-blue: #002251;
+  --white: #FFFFFF;
+  --teal: #002f4c;
+  --light-gray: #009696;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  height: 100vh;
+  background-color: var(--black);
+}
