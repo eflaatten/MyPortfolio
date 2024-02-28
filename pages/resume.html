@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
 
   <script src="../scripts/nav.js"></script>
+  <link rel="stylesheet" href="/reset.css">
   <link rel="stylesheet" href="../styles/styles.css">
   <link rel="stylesheet" href="../styles/navBar.css">
 </head>
@@ -16,31 +17,25 @@
   
   <div class="nav-container">
     <nav>
-      <ul class="navList">
-        <li class="navItem active">
-          <a class="navLink " href="../pages/index.html">Home</a>
+      <ul>
+        <li>
+          <a class="navLink" href="../pages/index.html" onclick="activeTab(this)">Home</a>
         </li>
-        <li class="navItem">
-          <a class="navLink " href="../pages/about.html">About</a>
+        <li>
+          <a class="navLink" href="../pages/about.html" onclick="activeTab(this)">About</a>
         </li>
-        <li class="navItem">
-          <a href="../pages/resume.html">Resume</a>
+        <li>
+          <a class="navLink" href="../pages/resume.html" onclick="activeTab(this)">Resume</a>
         </li>
-        <li class="navItem">
-          <a class="navLink " href="../pages/gallery.html">Gallery</a>
+        <li>
+          <a class="navLink" href="../pages/gallery.html" onclick="activeTab(this)">Gallery</a>
         </li>
-        <li class="navItem">
-          <a class="navLink " href="../pages/contact.html">Contact</a>
+        <li>
+          <a class="navLink" href="../pages/contact.html" onclick="activeTab(this)">Contact</a>
         </li>
       </ul>
     </nav>
   </div>
-  
-
-    <!-- <a class="icon" onclick="responsiveNav()">
-      <i class="fa fa-bars"></i>
-    </a> -->
-  </nav>
 
   <div class="main-container">
 

@@ -1,13 +1,3 @@
-responsiveNav = () => {
-  var burger = document.getElementsByClassName('nav-container')
-  if (burger.className === "nav") {
-    burger.className += " responsive";
-  } else {
-    burger.className = "nav";
-  }
-}
-
-
 activeTab = (clickedLink) => {
   const navLinks = document.querySelectorAll('.navLink')
 
@@ -16,4 +6,5 @@ activeTab = (clickedLink) => {
   })
 
   clickedLink.classList.add('active')
+
 }
