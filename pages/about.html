@@ -3,6 +3,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,49 +13,63 @@
 
   <script src="../scripts/nav.js"></script>
   <link rel="stylesheet" href="/reset.css">
-  <link rel="stylesheet" href="../styles/styles.css">
+  <!-- <link rel="stylesheet" href="../styles/styles.css"> -->
   <link rel="stylesheet" href="../styles/aboutStyles.css">
+  <!-- <link rel="stylesheet" href="../styles/resumeStyles.css"> -->
   <link rel="stylesheet" href="../styles/navBar.css">
 </head>
 <body>
+
+  <div class="main-container">
   
-  <body>
-  
-  
-    <div class="main-container">
-      
-      <div class="nav-container" id="nav-bar">
-        <nav>
-          <ul>
-            <li>
-              <a class="navLink" href="../pages/index.html">Home</a>
-            </li>
-            <li>
-              <a class="navLink" href="../pages/about.html">About</a>
-            </li>
-            <li>
-              <a class="navLink" href="../pages/resume.html">Resume</a>
-            </li>
-            <li>
-              <a class="navLink" href="../pages/gallery.html">Gallery</a>
-            </li>
-            <li>
-              <a class="navLink" href="../pages/contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-  
-  
-      <div class="parallax">
-        <p>Portfolio</p>
+    <div class="nav-container" id="nav-bar">
+      <nav>
+        <ul>
+          <li>
+            <a class="navLink" href="../pages/index.html">Home</a>
+          </li>
+          <li>
+            <a class="navLink" href="../pages/about.html">About</a>
+          </li>
+          <li>
+            <a class="navLink" href="../pages/resume.html">Resume</a>
+          </li>
+          <li>
+            <a class="navLink" href="../pages/gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a class="navLink" href="../pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="about-me parallax">
+      <h1>About Me</h1>
+    </div>
+    <div class="about-me-container">
+      <h2>Who am I?</h2>
+      <div class="about-me-secondary">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde maiores velit, quas veniam natus. Labore deleniti commodi veritatis cupiditate magnam dolores facere dolorem incidunt iste fugiat! Nam, molestiae vitae.</p>
       </div>
 
-      <div class="about-me flex">
-        <h1>About Me</h1>
-      </div>
-      
+      <a class="scroll-up" onclick="scrollToTop()">
+        <span class="left-bar"></span>
+        <span class="right-bar"></span> 
+        <svg width="40" height="40">
+            <line class="top" x1="0" y1="0" x2="120" y2="0"/>
+            <line class="left" x1="0" y1="40" x2="0" y2="-80"/>
+            <line class="bottom" x1="40" y1="40" x2="-80" y2="40"/>
+            <line class="right" x1="40" y1="0" x2="40" y2="1200"/>
+        </svg>
+    </a>
+    
+
+
+
+
     </div>
+
   
 </body>
 </html>

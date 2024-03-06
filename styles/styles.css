@@ -15,41 +15,18 @@ body {
 }
 
 .main-container {
-  height: 200vh !important;
-  background-color: var(--black);
-}
-
-.secondary-container {
   height: 100vh;
-  background-color: var(--white);
-}
-
-.parallax {
-  height: 100%;
   background-image: url("/img/home_page_background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* Give the value "fixed" to the background-attachment property to create the parallax scrolling effect */
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 400px 0 0 0;
 }
 
-.parallax p {
+.title {
   font-size: 150px;
   color: var(--white);
-  text-align: top;
-  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  font-family: "Madimi One", sans-serif;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-}
-
-
-/* Some mobile devices have a problem with background-attachment: fixed. So, you can use media queries to turn off the parallax effect for mobile devices: */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
+  padding-top: 350px;
 }

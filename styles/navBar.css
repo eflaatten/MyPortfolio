@@ -7,6 +7,7 @@
   --white: #FFFFFF;
   --teal: #002f4c;
   --light-gray: #009696;
+  --dark-gray: #262626a9;
 }
 
 
@@ -16,7 +17,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 26, 131, 0.437);
+  background-color: var(--dark-gray);
   position: fixed;
   /* border-radius: 50px; */
   /* margin-top: 10px; */
@@ -30,7 +31,7 @@ nav ul {
 
 nav ul li:hover a {
   cursor: pointer;
-  color: rgb(255, 17, 0);
+  color: var(--blue);
   text-decoration: underline;
 }
 

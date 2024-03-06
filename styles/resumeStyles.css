@@ -14,7 +14,45 @@ body {
   margin: 0;
 }
 
-.main-container {
+.third-container {
   height: 100vh;
-  background-color: var(--black);
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-container img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 0.3s ease;
+  margin-top: 20px;
+  
+}
+
+.image-container:hover img {
+  cursor: pointer;
+  opacity: 0.5; 
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 15px;
+  font-family: 'Roboto Mono', monospace;
+  display: none;
+  text-align: center;
+}
+
+.image-container:hover .hover-text {
+  display: block;
 }

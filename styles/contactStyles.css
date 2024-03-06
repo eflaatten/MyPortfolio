@@ -18,3 +18,12 @@ body {
   height: 100vh;
   background-color: var(--black);
 }
+
+.contact-title {
+  font-family: "Madimi One", sans-serif;
+  color: var(--white);
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 150px;
+}
