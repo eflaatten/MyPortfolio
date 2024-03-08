@@ -15,8 +15,9 @@ nav {
   height: 60px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: row-reverse;
   background-color: var(--dark-gray);
   position: fixed;
   /* border-radius: 50px; */
@@ -27,17 +28,15 @@ nav ul {
   list-style-type: none;
   padding: 0;
   display: flex;
+  font-family: "Madimi One", sans-serif;
+  color: var(--white);
+  
 }
 
 nav ul li:hover a {
   cursor: pointer;
-  color: var(--blue);
-  text-decoration: underline;
-}
-
-nav ul li:active a {
-  color: rgb(255, 17, 0);
-  text-decoration: underline;
+  color: rgb(0, 132, 255);
+  text-decoration: none;
 }
 
 nav ul li a {
@@ -48,9 +47,58 @@ nav ul li a {
   border-radius: 5px;
   font-family: 'Roboto Mono', monospace;
 }
-/* .active {
-  background-color: var(--blue);
-  color: var(--white);
+
+nav p {
+  color: white;
+  font-size: 24px;
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 35px;
+
+}
+
+.active {
+  text-decoration: none;
+  color: rgb(0, 167, 31);
   border-radius: 10px;
   padding: 10px 10px 10px 10px;
-} */
+}
+
+.icon{
+  display: none;
+}
+
+@media(max-width: 600px){
+  .icon{
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  .icon:hover{
+    color: blue;
+  }
+
+  .nav-container p{
+    display: none;
+  }
+
+  nav ul{
+    display: none;
+  }
+  .nav-container.responsive {position: relative;}
+  .nav-container.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-container.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

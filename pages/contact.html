@@ -9,44 +9,114 @@
   <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
 
   <script src="../scripts/nav.js"></script>
+  <script src="../scripts/scripts.js"></script>
   <link rel="stylesheet" href="/reset.css">
-  <link rel="stylesheet" href="../styles/styles.css">
-  <link rel="stylesheet" href="../styles/contactStyles.css">
   <link rel="stylesheet" href="../styles/navBar.css">
+  <!-- <link rel="stylesheet" href="../styles/styles.css"> -->
+  <link rel="stylesheet" href="../styles/contactStyles.css">
 </head>
 <body>
   
-  <div class="nav-container">
+  <div class="nav-container" id="nav-bar">
     <nav>
       <ul>
         <li>
-          <a class="navLink" href="../pages/index.html" onclick="activeTab(this)">Home</a>
+          <a class="navLink" href="../pages/index.html">Home</a>
         </li>
         <li>
-          <a class="navLink" href="../pages/about.html" onclick="activeTab(this)">About</a>
+          <a class="navLink" href="../pages/about.html">About</a>
         </li>
         <li>
-          <a class="navLink" href="../pages/resume.html" onclick="activeTab(this)">Resume</a>
+          <a class="navLink" href="../pages/resume.html">Resume</a>
         </li>
         <li>
-          <a class="navLink" href="../pages/gallery.html" onclick="activeTab(this)">Gallery</a>
+          <a class="navLink" href="../pages/gallery.html">Gallery</a>
         </li>
         <li>
-          <a class="navLink" href="../pages/contact.html" onclick="activeTab(this)">Contact</a>
+          <a class="navLink active" href="../pages/contact.html">Contact</a>
         </li>
       </ul>
+      <p>Elliot Flaatten</p>
+
+      <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
   </div>
 
   <div class="main-container">
 
-    <div class="contact-title">
-      <p>Contact me!</p>
+    <div class="contact-form">
+
+      <h2>Contact</h2>
+      <div class="first-section">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+    
+        <br>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        
+        <br>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="msg" name="messge" placeholder="Write here..." maxlength="500"></textarea>
+        </div>
+    
+      </div>
+      <div class="button-container">
+        <button type="reset" id="reset">Reset</button>
+        <button type="submit" id="submit">Submit</button>
+      </div>
     </div>
-  </div>
-
-  <div class="contact-form">
-
+  
+  
+      <!-- <div class="checklist">
+        <label for="aboutMe">How did you hear about me?</label>
+  
+        <div>
+          <label for="classmate">Classmate</label>
+          <input type="checkbox" name="classmate" id="classmate">
+        </div>
+  
+        <div>
+          <label for="resume-submission">Resume Submission</label>
+          <input type="checkbox" name="resume-submission" id="resume-submission">
+        </div>
+  
+        <div>
+          <label for="LinkedIn">LinkedIn</label>
+          <input type="checkbox" name="linkedin" id="linkedin">
+        </div>
+  
+        <div>
+          <label for="coding-academy-rec">Coding Academy Rec</label>
+          <input type="checkbox" name="coding-academy-rec" id="coding-academy-rec">
+        </div>
+      </div>
+  
+  
+      <div class="submit">
+  
+        <label for="contact-back" id="contact-back">Would you like to be contacted back?</label>
+  
+        <div class="contact-container">
+          <label for="contact">Yes</label>
+          <input type="radio" name="contact-yes" id="contact" value="yes">
+          <label for="contact">No</label>
+          <input type="radio" name="contact-no" id="contact" value="no">
+        </div>
+  
+        <div class="button-container">
+          <button type="reset" id="reset">Reset</button>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </div>
+    </div>  -->
   </div>
 </body>
 </html>
