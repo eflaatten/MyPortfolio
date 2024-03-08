@@ -29,16 +29,16 @@ body {
 .calculator-project,
 .ttt-project,
 .contact-form {
-  padding: 0 190px 0 0;
+  padding: 0 190px 100px 0;
 }
 .responsive-site{
-  padding: 0px 152px 0px 0px;
+  padding: 0px 191px 0px 0px;
 }
 .resume-donald{
-  padding: 0px 152px 0px 0px;
+  padding: 0px 191px 0px 0px;
 }
 .hair-salon{
-  padding: 0px 152px 0px 0px;
+  padding: 0px 191px 0px 0px;
 }
 
 .calculator-project{
@@ -117,7 +117,40 @@ body {
 @media(max-width: 1920px){
   .calculator-project,
   .ttt-project,
-  .contact-form {
+  .contact-form,
+  .responsive-site,
+  .resume-donald,
+  .hair-salon{
     padding: 0 150px 0 0;
+  }
+}
+
+@media(max-width: 420px){
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  .calculator-project img,
+  .ttt-project img,
+  .contact-form img,
+  .responsive-site img,
+  .resume-donald img,
+  .hair-salon img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: auto;
+    margin: 100px 0 20px 70px;
+    border: 5px solid rgba(255, 255, 255, 0.761);
+    border-radius: 5px;
+  }
+  .hair-salon{
+    margin-bottom: 100px;
+  }
+  .project-text{
+    display: none;
   }
 }

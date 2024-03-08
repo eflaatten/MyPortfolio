@@ -128,3 +128,52 @@ label {
   
 }
 
+@media(max-width: 420px){
+  .main-container {
+    height: 100vh;
+    background-image: url("/img/snow-sunset.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form {
+    height: 65%;
+    width: 85%;
+    background-color: rgba(0, 0, 110, 0.854);
+    box-shadow: 1px 1px 2px rgb(0, 187, 255), 0 0 5em blue, 0 0 0.2em blue;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    overflow: hidden;
+    margin-left: 35px;
+  }
+  .first-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  
+    #name{
+      width: 120px;
+      height: 40px;
+      border-radius: 8px;
+    }
+    #email{
+      width: 122px;
+      height: 40px;
+      border-radius: 8px;
+    }
+    #msg{
+      width: 250px;
+      height: 120px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+  }
+}
+
