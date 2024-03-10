@@ -16,53 +16,54 @@ body {
 
 .main-container {
   height: 100vh;
+  overflow: hidden; 
   background-image: url("/img/snow-sunset.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.gallery-container{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  overflow: hidden; 
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); 
 }
 
 .calculator-project,
-.ttt-project,
-.contact-form {
-  padding: 0 190px 100px 0;
-}
 .responsive-site{
-  padding: 0px 191px 0px 0px;
+  padding: 0 240px 0 100px;
+  margin-bottom: 50px;
 }
-.resume-donald{
-  padding: 0px 191px 0px 0px;
-}
+.ttt-project,
+.contact-form,
+.resume-donald,
 .hair-salon{
-  padding: 0px 191px 0px 0px;
+  padding: 0 189px 0 100px;
+  margin-right: 50px;
 }
 
 .calculator-project{
-  grid-column: 2/3;
+  grid-column: 1/2;
   grid-row: 2/3;
 }
 .ttt-project{
-  grid-column: 3/4;
+  grid-column: 2/3;
   grid-row: 2/3;
 }
 .contact-form{
-  grid-column: 4/5;
+  grid-column: 3/4;
   grid-row: 2/3;
 }
 .responsive-site{
-  grid-column: 2/3;
+  grid-column: 1/2;
   grid-row: 3/4;
 }
 .resume-donald{
-  grid-column: 3/4;
+  grid-column: 2/3;
   grid-row: 3/4;
 }
 .hair-salon{
-  grid-column: 4/5;
+  grid-column: 3/4;
   grid-row: 3/4;
 }
 
@@ -114,24 +115,26 @@ body {
 } 
 
 
-@media(max-width: 1920px){
-  .calculator-project,
-  .ttt-project,
-  .contact-form,
-  .responsive-site,
-  .resume-donald,
-  .hair-salon{
-    padding: 0 150px 0 0;
-  }
-}
-
-@media(max-width: 420px){
+@media(max-width: 600px){
   .main-container{
-    display: flex;
-    flex-direction: column;
     overflow: auto;
   }
-
+  .gallery-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .calculator-project,
+  .responsive-site{
+    padding: 0 10px 0 10px;
+    margin-right: 150px;
+  }
+  .ttt-project,
+  .contact-form,
+  .resume-donald,
+  .hair-salon{
+    padding: 0 10px 0 10px;
+    margin-right: 150px;
+  }
   .calculator-project img,
   .ttt-project img,
   .contact-form img,
@@ -143,12 +146,22 @@ body {
     align-items: center;
     width: 100%; 
     height: auto;
-    margin: 100px 0 20px 70px;
+    margin: 200px 0 20px 70px;
     border: 5px solid rgba(255, 255, 255, 0.761);
     border-radius: 5px;
+    transform: none;
   }
+  .calculator-project:hover img,
+  .ttt-project:hover img,
+  .contact-form:hover img,
+  .responsive-site:hover img,
+  .resume-donald:hover img,
+  .hair-salon:hover img{
+  cursor: pointer;
+  transform: none;
+}
   .hair-salon{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
   .project-text{
     display: none;

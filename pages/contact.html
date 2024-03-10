@@ -3,74 +3,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
-
-  <script src="../scripts/index.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="/reset.css">
   <link rel="stylesheet" href="../styles/navBar.css">
+  <link rel="stylesheet" href="../styles/styles.css">
   <link rel="stylesheet" href="../styles/contactStyles.css">
 </head>
-<body>
-  
-  <div class="nav-container" id="nav-bar">
-    <nav>
-      <ul>
-        <li>
-          <a class="navLink" href="../pages/index.html">Home</a>
-        </li>
-        <li>
-          <a class="navLink" href="../pages/about.html">About</a>
-        </li>
-        <li>
-          <a class="navLink" href="../pages/resume.html">Resume</a>
-        </li>
-        <li>
-          <a class="navLink" href="../pages/gallery.html">Gallery</a>
-        </li>
-        <li>
-          <a class="navLink active" href="../pages/contact.html">Contact</a>
-        </li>
-      </ul>
-      <p>Elliot Flaatten</p>
-
-      <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </nav>
-  </div>
-
+<body>  
   <div class="main-container">
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="nav-logo">EF</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../pages/index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="../pages/about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="../pages/resume.html" class="nav-link">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="../pages/gallery.html" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="../pages/contact.html" class="nav-link active">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
 
-    <div class="contact-form">
+    <div class="contact-page">
+      <div class="contact-form">
+        <h2>contact here</h2>
+        <div class="first-section">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+      
+          <br>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          
+          <br>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="msg" name="messge" placeholder="Write here..." maxlength="500"></textarea>
+          </div>
+      
+        </div>
+        <div class="button-container">
+          <button type="reset" id="reset">Reset</button>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </div>
 
-      <h2>Contact</h2>
-      <div class="first-section">
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" name="name" id="name" required>
+      <div class="my-contact">
+        <h1 class="myc-header flex">Ways to contact me</h1>
+        <div class="phone flex">
+          <span class="material-symbols-outlined">call</span>
+          <p>123-455-6789</p>
         </div>
-    
-        <br>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" required>
+  
+        <div class="email flex">
+          <span class="material-symbols-outlined">mail</span>
+          <p>coolemail@hotmail.com</p>
         </div>
-        
-        <br>
-        <div>
-          <label for="message">Message:</label>
-          <textarea id="msg" name="messge" placeholder="Write here..." maxlength="500"></textarea>
+  
+        <div class="location flex">
+          <span class="material-symbols-outlined">location_on</span>
+          <p>123 :P Dr</p>
         </div>
-    
       </div>
-      <div class="button-container">
-        <button type="reset" id="reset">Reset</button>
-        <button type="submit" id="submit">Submit</button>
-      </div>
+
     </div>
   </div>
 </body>
+<script src="../scripts/index.js"></script>
 </html>

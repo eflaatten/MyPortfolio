@@ -19,6 +19,10 @@
 body {
   padding: 0;
   margin: 0;
+  background-image: url("/img/snow-sunset.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parallax {
@@ -31,7 +35,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 400px 0 0 0;
+  padding: 198px 0 0 0;
 }
 
 .about-me {
@@ -48,38 +52,104 @@ body {
   font-family: "Madimi One", sans-serif;
   color: var(--white);
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  padding-top: 170px;
 }
-
-.about-me-container {
-  height: 100vh;
+.intro{
+  background-image: url(../img/snowfall.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  padding: 100px 0;
-}
-
-.about-me-container h2 {
-  grid-column: 1/2;
-  grid-row: 2/3;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column: 2/3;
+  grid-row: 1/4;
+  font-family: "Madimi One", sans-serif;
   color: var(--white);
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  padding-top: 100px;
+}
+.more-about-me{
+  background-image: url(../img/tokyo_train.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column: 2/3;
+  grid-row: 1/4;
+  font-family: "Madimi One", sans-serif;
+  color: var(--white);
+  padding-bottom: 250px;
+}
+.more-about-me-two{
+  background-image: url(../img/red_2.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column: 2/3;
+  grid-row: 1/3;
+  font-family: "Madimi One", sans-serif;
+  color: var(--white);
+}
+.intro h2 {
   text-align: center;
   font-size: 100px;
-  font-family: "Madimi One", sans-serif;
-  position: relative;
-  top: 15%;
-  transition: top 0.3s ease;
-}
-
-.about-me-container p {
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
   grid-column: 2/3;
-  grid-row: 3/4;
-  font-size: 25px;
+  grid-row: 1/2;
   font-family: "Madimi One", sans-serif;
   color: var(--white);
-  transition: top 0.3s ease;
-  position: relative;
 }
+.intro p {
+  font-size: 25px;
+  font-family: "Madimi One", sans-serif;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-family: "Madimi One", sans-serif;
+  color: var(--white);
+}
+.more-about-me h2 {
+  text-align: center;
+  font-size: 100px;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-family: "Madimi One", sans-serif;
+  color: var(--white);
+}
+.more-about-me p {
+  font-size: 25px;
+  font-family: "Madimi One", sans-serif;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-family: "Madimi One", sans-serif;
+  color: var(--white);
+}
+.more-about-me-two h2 {
+  text-align: center;
+  font-size: 100px;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-family: "Madimi One", sans-serif;
+  color: var(--white);
+}
+.more-about-me-two p {
+  font-size: 25px;
+  font-family: "Madimi One", sans-serif;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-family: "Madimi One", sans-serif;
+  color: var(--white);
+}
+
 
 .about-me-container h1 {
   grid-column: 1/4;
@@ -89,7 +159,7 @@ body {
   font-family: "Madimi One", sans-serif;
   color: var(--white);
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-  transition: top 0.3s ease;
+  /* transition: top 0.3s ease; */
   position: relative;
 
 
@@ -97,7 +167,6 @@ body {
 
  
 .scroll-up {
-
   grid-column: 3/4;
   grid-row: 4/5;
   margin: 164px 0 0 362px;
@@ -107,12 +176,12 @@ body {
   outline: 1px solid rgba(666,666,666,.08);
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: -332px;
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
   svg line {
-      stroke-width: 1;
-      stroke: #aaa;
+      stroke-width: 2;
+      stroke: white;
       fill: none;
       stroke-dasharray: 20;
       -webkit-transition: all .4s ease;
@@ -150,7 +219,7 @@ body {
     transform: rotate(-45deg);
     &:after {
       content: "";
-      background-color: #666;
+      background-color: white;
       width: 18px;
       height: 1px;
       display: block;
@@ -172,7 +241,7 @@ body {
     border-radius: 2px;
     &:after {
       content: "";
-      background-color: #666;
+      background-color: white;
       width: 18px;
       height: 1px;
       display: block;
@@ -193,8 +262,62 @@ body {
   }
 }
 
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
+@media(max-width: 600px){
+  .about-me h1{
+    font-size: 80px;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+      font-size: 70px;
+      margin-bottom: 40px;
+    }
+    p{
+      font-size: 20px;
+      padding: 0 15px 150px 15px;
+      width: 80%;
+      text-align: center;
+    }
+  }
+  .more-about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+      font-size: 70px;
+      margin-bottom: 40px;
+    }
+    p{
+      font-size: 20px;
+      padding: 0 15px 150px 15px;
+      width: 80%;
+      text-align: center;
+    }
+  }
+  .more-about-me-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+      font-size: 70px;
+      margin-bottom: 40px;
+    }
+    p{
+      font-size: 20px;
+      padding: 0 15px 150px 15px;
+      width: 80%;
+      text-align: center;
+    }
+  }
+
+  .about-me-container p{
+    font-size: 20px;
+    width: 65%;
   }
 }
+

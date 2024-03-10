@@ -9,16 +9,32 @@
   --light-gray: #009696;
 }
 
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   padding: 0;
   margin: 0;
 }
-
-.third-container {
-  height: 100vh;
+.main-container {
+  height: auto;
+  background-image: url("/img/snow-sunset.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.resume-page{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .image-container {
+  grid-column: 1/2;
+  grid-row: 1/2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,24 +42,23 @@ body {
 }
 
 .image-container img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
   object-fit: cover;
   object-position: center;
   transition: opacity 0.3s ease;
-  margin-top: 20px;
-  
+  margin-top: 100px;
 }
 
 .image-container:hover img {
   cursor: pointer;
-  opacity: 0.5; 
+  opacity: 0.5;
 }
 
 .hover-text {
   position: absolute;
-  top: 50%;
+  top: 67%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -55,4 +70,156 @@ body {
 
 .image-container:hover .hover-text {
   display: block;
+}
+
+.resume-name{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+  color: var(--white);
+  align-items: flex-start;
+  margin-top: 30px;
+}
+.job{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+  color: var(--white);
+  align-items: flex-start;
+  margin-top: 60px;
+  font-style: italic;
+}
+.education{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-family: "Roboto Slab", serif;
+  font-size: 35px;
+  color: var(--white);
+  align-items: flex-start;
+  margin-top: 90px;
+  font-style: italic;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p:nth-child(2){
+    font-size: 25px;
+    margin-top: 5px;
+  }
+}
+.skills{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  font-family: "Roboto Slab", serif;
+  font-size: 35px;
+  color: var(--white);
+  align-items: flex-start;
+  padding: 0 0 120px 0;
+  font-style: italic;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p:nth-child(2),
+  p:nth-child(3),
+  p:nth-child(4){
+    font-size: 25px;
+    margin-top: 5px;
+  }
+}
+.career{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.career-title{
+  font-family: "Roboto Slab", serif;
+  font-size: 45px;
+  color: var(--white);
+  padding: 25px 0 0 20px;
+}
+
+.career-summary{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  color: var(--white);
+  padding: 25px 530px 0 10px;
+}
+.job-experience{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.job-exp-title{
+  font-family: "Roboto Slab", serif;
+  font-size: 45px;
+  color: var(--white);
+  padding: 60px 530px 0 10px;
+}
+.job-summary{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  color: var(--white);
+  padding: 25px 530px 0 10px;
+}
+
+@media(max-width: 600px){
+  .resume-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  .image-container img{
+    display: none;
+  }
+  /* .image-container img {
+    width: 90px;
+    height: 90px;
+    border-radius: 20%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 0.3s ease;
+  }
+  .hover-text {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+    display: none;
+    text-align: center;
+  }   */
+  .career,
+  .job-experience{
+    text-align: center;
+  }
+  .career-summary{
+    padding: 0 70px 0 70px;
+  }
+  .job-exp-title{
+    padding: 15px 0 15px 0;
+  }
+  .job-summary{
+    padding: 0 120px 60px 120px;
+  }
+  .resume-name{
+    text-align: center;
+  }
+  .job{
+    font-size: 30px;
+    text-align: center;
+  }
+  .education{
+    margin-top: 46px;
+  }
+  .skills{
+    padding: 50px 0 0 0;
+  }
+  
 }

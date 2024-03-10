@@ -3,12 +3,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
-
-  <script src="../scripts/index.js"></script>
   <link rel="stylesheet" href="/reset.css">
   <link rel="stylesheet" href="../styles/navBar.css">
   <link rel="stylesheet" href="../styles/styles.css">
@@ -16,76 +17,80 @@
 </head>
 <body>
   
-  <div class="nav-container" id="nav-bar">
-    <nav>
-      <ul>
-        <li>
-          <a class="navLink" href="../pages/index.html">Home</a>
-        </li>
-        <li>
-          <a class="navLink" href="../pages/about.html">About</a>
-        </li>
-        <li>
-          <a class="navLink" href="../pages/resume.html">Resume</a>
-        </li>
-        <li>
-          <a class="navLink active" href="../pages/gallery.html">Gallery</a>
-        </li>
-        <li>
-          <a class="navLink" href="../pages/contact.html">Contact</a>
-        </li>
-      </ul>
-      <p>Elliot Flaatten</p>
-
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </nav>
+  <div class="main-container">
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="nav-logo">EF</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../pages/index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="../pages/about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="../pages/resume.html" class="nav-link">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="../pages/gallery.html" class="nav-link active">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="../pages/contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="gallery-container">
+      <div class="calculator-project">
+        <a href="https://eflaatten.github.io/calculator-app-101/">
+          <img src="../img/gallery/calculator.png" alt="Calculator">
+          <p class="project-text">Calculator</p>
+        </a>
+      </div>
+      
+      <div class="ttt-project">
+        <a href="https://eflaatten.github.io/TicTacToe-101/">
+          <img src="../img/gallery/tic-tac-toe.png" alt="Tic Tac Toe">
+          <p class="project-text">Tic Tac Toe</p>
+        </a>
+      </div>
+      
+      <div class="contact-form">
+        <a href="https://eflaatten.github.io/web101_elliot_flaatten/pages/contact.html">
+          <img src="../img/gallery/contact-form.png" alt="Contact Form">
+          <p class="project-text">Contact Form</p>
+        </a>
+      </div>
+  
+      <div class="responsive-site">
+        <a href="https://eflaatten.github.io/First-Responsive-Website/">
+          <img src="../img/gallery/Responsive-site.png" alt="First responsive site">
+          <p class="project-text">First Responsive Site</p>
+        </a>
+      </div>
+  
+      <div class="resume-donald">
+        <a href="https://eflaatten.github.io/web101_elliot_flaatten/pages/resume.html">
+          <img src="../img/gallery/resume-donald.png" alt="Donald duck resume">
+          <p class="project-text">First Resume</p>
+        </a>
+      </div>
+  
+      <div class="hair-salon">
+        <a href="https://eflaatten.github.io/hair-salon/">
+          <img src="../img/gallery/hair-salon.png" alt="Hair salon">
+          <p class="project-text">Hair Salon</p>
+        </a>
+      </div>
+    </div>
   </div>
 
-  <div class="main-container">
-
-    <div class="calculator-project">
-      <a href="https://eflaatten.github.io/calculator-app-101/">
-        <img src="../img/gallery/calculator.png" alt="Calculator">
-        <p class="project-text">Calculator</p>
-      </a>
-    </div>
-    
-    <div class="ttt-project">
-      <a href="https://eflaatten.github.io/TicTacToe-101/">
-        <img src="../img/gallery/tic-tac-toe.png" alt="Tic Tac Toe">
-        <p class="project-text">Tic Tac Toe</p>
-      </a>
-    </div>
-    
-    <div class="contact-form">
-      <a href="https://eflaatten.github.io/web101_elliot_flaatten/pages/contact.html">
-        <img src="../img/gallery/contact-form.png" alt="Contact Form">
-        <p class="project-text">Contact Form</p>
-      </a>
-    </div>
-
-    <div class="responsive-site">
-      <a href="https://eflaatten.github.io/First-Responsive-Website/">
-        <img src="../img/gallery/Responsive-site.png" alt="First responsive site">
-        <p class="project-text">First Responsive Site</p>
-      </a>
-    </div>
-
-    <div class="resume-donald">
-      <a href="https://eflaatten.github.io/web101_elliot_flaatten/pages/resume.html">
-        <img src="../img/gallery/resume-donald.png" alt="Donald duck resume">
-        <p class="project-text">First Resume</p>
-      </a>
-    </div>
-
-    <div class="hair-salon">
-      <a href="https://eflaatten.github.io/hair-salon/">
-        <img src="../img/gallery/hair-salon.png" alt="Hair salon">
-        <p class="project-text">Hair Salon</p>
-      </a>
-    </div>
-
-  </body>
+</body>
+<script src="../scripts/index.js"></script>
 </html>

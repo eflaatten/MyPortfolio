@@ -9,24 +9,40 @@
   --light-gray: #009696;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-}
-
 .main-container {
-  height: 100vh;
-  background-image: url("/img/snow-sunset.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
-
-.title {
+.title{
   font-size: 150px;
   color: var(--white);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Madimi One", sans-serif;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-  padding-top: 350px;
+  padding-top: 300px;
 }
+
+@media(max-width: 600px){
+  .title{
+    font-size: 80px;
+    padding-top: 420px;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+

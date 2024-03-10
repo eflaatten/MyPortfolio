@@ -10,67 +10,81 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
-
-  <script src="../scripts/index.js"></script>
   <link rel="stylesheet" href="/reset.css">
   <link rel="stylesheet" href="../styles/navBar.css">
+  <!-- <link rel="stylesheet" href="../styles/styles.css"> -->
   <link rel="stylesheet" href="../styles/aboutStyles.css">
 </head>
 <body>
 
   <div class="main-container">
-  
-    <div class="nav-container" id="nav-bar">
-      <nav>
-        <ul>
-          <li>
-            <a class="navLink" href="../pages/index.html">Home</a>
-          </li>
-          <li>
-            <a class="navLink active" href="../pages/about.html">About</a>
-          </li>
-          <li>
-            <a class="navLink" href="../pages/resume.html">Resume</a>
-          </li>
-          <li>
-            <a class="navLink" href="../pages/gallery.html">Gallery</a>
-          </li>
-          <li>
-            <a class="navLink" href="../pages/contact.html">Contact</a>
-          </li>
-        </ul>
-        <p>Elliot Flaatten</p>
 
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+    <header class="header">
+      <nav class="navbar">
+          <a href="#" class="nav-logo">EF</a>
+          <ul class="nav-menu">
+              <li class="nav-item">
+                  <a href="../pages/index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a href="../pages/about.html" class="nav-link active">About</a>
+              </li>
+              <li class="nav-item">
+                  <a href="../pages/resume.html" class="nav-link">Resume</a>
+              </li>
+              <li class="nav-item">
+                  <a href="../pages/gallery.html" class="nav-link">Gallery</a>
+              </li>
+              <li class="nav-item">
+                  <a href="../pages/contact.html" class="nav-link">Contact</a>
+              </li>
+          </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
       </nav>
-    </div>
+    </header>
 
     <div class="about-me parallax">
-      <h1>About Me</h1>
+      <h1>About Me</h1> 
     </div>
     
-    <div class="about-me-container parallax">
-      <h2>Introduction</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde maiores velit, quas veniam natus. Labore deleniti commodi veritatis cupiditate magnam dolores facere dolorem incidunt iste fugiat! Nam, molestiae vitae.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde maiores velit, quas veniam natus. Labore deleniti commodi veritatis cupiditate magnam dolores facere dolorem incidunt iste fugiat! Nam, molestiae vitae.
-      </p>
-
-
-      <h1>End.. for now</h1>
+    <div>
+      <div class="intro ">
+        <h2>Introduction</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde maiores velit, quas veniam natus. Labore deleniti commodi veritatis cupiditate magnam dolores facere dolorem incidunt iste fugiat! Nam, molestiae vitae.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde maiores velit, quas veniam natus. Labore deleniti commodi veritatis cupiditate magnam dolores facere dolorem incidunt iste fugiat! Nam, molestiae vitae.
+        </p>
+      </div>
+  
+      <div class="more-about-me parallax">
+        <h2>More about me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde maiores velit, quas veniam natus. Labore deleniti commodi veritatis cupiditate magnam dolores facere dolorem incidunt iste fugiat! Nam, molestiae vitae.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde maiores velit, quas veniam natus. Labore deleniti commodi veritatis cupiditate magnam dolores facere dolorem incidunt iste fugiat! Nam, molestiae vitae.
+        </p>
+      </div>
+  
+      <div class="more-about-me-two parallax">
+        <h2>More about me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde maiores velit, quas veniam natus. Labore deleniti commodi veritatis cupiditate magnam dolores facere dolorem incidunt iste fugiat! Nam, molestiae vitae.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo unde maiores velit, quas veniam natus. Labore deleniti commodi veritatis cupiditate magnam dolores facere dolorem incidunt iste fugiat! Nam, molestiae vitae.
+        </p>
+      </div>
+  
+      <a class="scroll-up" onclick="scrollToTop()" style="display: none;">
+        <span class="left-bar"></span>
+        <span class="right-bar"></span> 
+        <svg width="40" height="40">
+          <line class="top" x1="0" y1="0" x2="120" y2="0"/>
+          <line class="left" x1="0" y1="40" x2="0" y2="-80"/>
+          <line class="bottom" x1="40" y1="40" x2="-80" y2="40"/>
+          <line class="right" x1="40" y1="0" x2="40" y2="1200"/>
+        </svg>
+      </a>
     </div>
-
-    <a class="scroll-up" onclick="scrollToTop()">
-      <span class="left-bar"></span>
-      <span class="right-bar"></span> 
-      <svg width="40" height="40">
-        <line class="top" x1="0" y1="0" x2="120" y2="0"/>
-        <line class="left" x1="0" y1="40" x2="0" y2="-80"/>
-        <line class="bottom" x1="40" y1="40" x2="-80" y2="40"/>
-        <line class="right" x1="40" y1="0" x2="40" y2="1200"/>
-      </svg>
-    </a>
   </div>
 </body>
+<script src="../scripts/index.js"></script>
 </html>
