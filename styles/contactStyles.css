@@ -196,7 +196,7 @@ label {
 @media(max-width: 600px){
   .main-container {
     height: auto;
-    background-image: url("/img/snow-sunset.jpeg");
+    background-image: url("../img/snow-sunset.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
