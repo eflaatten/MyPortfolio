@@ -22,7 +22,7 @@ body {
 }
 
 .main-container{
-  background-image: url("/img/snow-sunset.jpeg");
+  background-image: url("../img/snow-sunset.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +30,7 @@ body {
 
 .parallax {
   height: 100%;
-  background-image: url("/img/snow-sunset.jpeg");
+  background-image: url("../img/snow-sunset.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
